@@ -1,0 +1,74 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Information About ChatBot
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- story: User Shopping
+  steps:
+    - intent: Choose_Category
+    - action: utter_choose_category
+
+- story: User selects Electronics
+  steps:
+    - intent: Electronics
+    - action: utter_electronics
+    - action: utter_electronics_choice
+    - intent: selected_phone
+    - action: utter_electronics_phone
+
+- story: electronics
+  steps:
+    - intent: selected_phone
+    - action: utter_electronics
+    - action: utter_electronics_phone
+
+- story: about product
+  steps:
+    - intent: query_about_prod
+    - action: utter_query_about_prod
+
+- story: about order
+  steps:
+    - intent: query_about_order
+    - action: utter_query_about_order
+
+- story: about track
+  steps:
+    - intent: qurey_about_track
+    - action: utter_qurey_about_track
+
+- story: modify cancel order
+  steps:
+    - intent: modify_cancel_order
+    - action: utter_modify_cancel_order
+
+- story: return policy
+  steps:
+    - intent: query_return_policy
+    - action: utter_query_return_policy
+
+- story: promotions discount
+  steps:
+    - intent: promotions_discount
+    - action: utter_promotions_discount
+
+- story: payment method
+  steps:
+    - intent: query_about_payment_method
+    - action: utter_query_about_payment_method
+
+- story: customer support
+  steps:
+      - intent: customer_support
+      - action: utter_customer_support

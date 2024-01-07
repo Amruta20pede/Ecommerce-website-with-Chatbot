@@ -1,0 +1,473 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - Choose_Category
+  - Electronics
+  - query_about_prod
+  - query_about_order
+  - query_about_payment_method
+  - qurey_about_track
+  - modify_cancel_order
+  - query_return_policy
+  - promotions_discount
+  - customer_support
+  - selected_phone
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hello! Welcome to TRENDFIY! How can I assist you today?"
+  - text: "Hi there! Excited to help you with your shopping needs. What can I do for you?"
+  - text: "Greetings! It's a pleasure to have you here. How may I make your shopping experience better today?"
+  - text: "Hey! Welcome to TRENDFIY! Ready to find what you're looking for? Let me know how I can help!"
+  - text: "Hello and welcome! 🌟 How can I assist you in making your shopping experience amazing today?"
+  - text: "Hi, shopper! Welcome to TRENDFIY. Need any assistance finding the perfect item?"
+  - text: "Good day! Thrilled to have you here. How can I make your online shopping journey more enjoyable?"
+  - text: "Greetings, savy shopper! Ready to explore our latest collections? Let me know if you need any guidance."
+  - text: "Hello from TRENDFIY! Delighted to help you find exactly what you're looking for. What brings you in today?"
+  - text: "Welcome to TRENDFIY! How can I assist you on your quest for the perfect purchase?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+  - text: "Great choice! 🌟 You've got a good eye for quality. Is there anything else you'd like to add to your cart today?"
+  - text: "Awesome! 😃 Your happiness is our priority. Need help with anything else?"
+  - text: "Yay! 🎉 That's a fantastic pick! Anything else I can assist you with today?"
+  - text: "Fantastic! 🌈 Your order is on its way to making your day even better. Anything else you need?"
+  - text: "Hooray! 🚀 Your purchase is like a little burst of joy. Is there anything else I can help you find?"
+  - text: "Happy shopping! 😊 Your choices are making our day brighter. Anything else on your wishlist?"
+  - text: "Woohoo! 🎊 Your selection is spot on! Anything specific you're looking for next?"
+  - text: "Well done! 🌟 You've just added a dash of happiness to your cart. What's next on your shopping list?"
+  - text: "Amazing choice! 😄 It's smiles all around here. Anything else I can assist you with today?"
+  - text: "Bravo! 👏 Your taste is impeccable. Need assistance with anything else as you continue your shopping spree?"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Thank you for chatting with us! If you have any more questions, feel free to reach out. Have a great day!"
+  - text: "Goodbye! If you need assistance in the future, don't hesitate to ask. Happy shopping!"
+  - text: "It was a pleasure assisting you today! If there's anything else you need, we're just a message away. Goodbye!"
+  - text: "Thank you for choosing us! If you ever need help again, we're here 24/7. Have a fantastic day!"
+  - text: "Goodbye for now! Remember, our virtual doors are always open. Happy shopping!"
+  - text: "Farewell! If you have more inquiries later, just drop us a message. Have a wonderful time shopping!"
+  - text: "It's time to say goodbye, but our support is never far away. Reach out anytime you need assistance. Have a great one!"
+  - text: "Thanks for chatting! Wishing you a fantastic day ahead. If you need anything else, we're here."
+  - text: "Goodbye and happy shopping! If you run into any questions, our chat is just a click away."
+  - text: "Signing off for now! If you ever need help or have more questions, feel free to come back. Take care!"
+
+  utter_iamabot:
+  - text: "I am a Shree, designed by KunXAmu."
+  - text: "Greetings from Shree! 🌟 How can I make your shopping experience delightful today?"
+  - text: "Hey, it's Shree! Welcome back! Excited to help you discover something amazing. What are you looking for?"
+  - text: "Shree at your service! 🤖 Ready to assist you with any questions or choices you have in mind."
+  - text: "Hello, lovely shopper! Shree here, brightening up your day. What can I do for you today?"
+  - text: "Shree in the house! 🎉 Ready to sprinkle some magic on your shopping experience. What's on your wishlist?"
+  - text: "Greetings! Shree speaking. How may I assist you in making your shopping journey extraordinary?"
+  - text: "Hi, it's Shree! Thrilled to be part of your shopping experience. Need any guidance or recommendations?"
+  - text: "Shree here! 🌈 Your personal shopping assistant. What can I do to make your day a little brighter?"
+  - text: "Welcome back! It's Shree, your friendly chatbot. Let's find the perfect items together. What are you in the mood for?"
+
+  utter_choose_category:
+    - text: "Great! Let's get started. Please choose a category you're interested in, such as "
+      buttons:
+        - title: "Electronics"
+          payload: /Electronics
+        - title: "Clothing"
+          payload: /Clothing
+        - title: "Home and Furniture"
+          payload: /Home and Furniture
+        - title: "Books and Stationery"
+          payload: /Books and Stationery
+        - title: "Beauty and Personal Care"
+          payload: /Beauty and Personal Care
+        - title: "Sports and Outdoors"
+          payload: /Sports and Outdoors
+        - title: "Toys and Games"
+          payload: /Toys and Games
+        - title: "Automotive"
+          payload: /Automotive
+        - title: "Health and Wellness"
+          payload: /Health and Wellness
+        - title: "Jewelry and Watches"
+          payload: /Jewelry and Watches
+        - title: "Grocery and Food"
+          payload: /Grocery and Food
+        - title: "Baby and Kids"
+          payload: /Baby and Kids
+        - title: "Crafts and Hobbies"
+          payload: /Crafts and Hobbies
+        - title: "Music and Instruments"
+          payload: /Music and Instruments
+        - title: "Garden and Outdoor Living"
+          payload: /Garden and Outdoor Living
+        - title: "Handmade"
+          payload: /Handmade
+    - text: "Awesome! To help you find the perfect items, please select a category like "
+      buttons:
+        - title: "Electronics"
+          payload: /Electronics
+        - title: "Clothing"
+          payload: /Clothing
+        - title: "Home and Furniture"
+          payload: /Home and Furniture
+        - title: "Books and Stationery"
+          payload: /Books and Stationery
+        - title: "Beauty and Personal Care"
+          payload: /Beauty and Personal Care
+        - title: "Sports and Outdoors"
+          payload: /Sports and Outdoors
+        - title: "Toys and Games"
+          payload: /Toys and Games
+        - title: "Automotive"
+          payload: /Automotive
+        - title: "Health and Wellness"
+          payload: /Health and Wellness
+        - title: "Jewelry and Watches"
+          payload: /Jewelry and Watches
+        - title: "Grocery and Food"
+          payload: /Grocery and Food
+        - title: "Baby and Kids"
+          payload: /Baby and Kids
+        - title: "Crafts and Hobbies"
+          payload: /Crafts and Hobbies
+        - title: "Music and Instruments"
+          payload: /Music and Instruments
+        - title: "Garden and Outdoor Living"
+          payload: /Garden and Outdoor Living
+        - title: "Handmade"
+          payload: /Handmade
+    - text: "Perfect! We have a variety of categories to explore. What area are you interested in today? You can choose from "
+      buttons:
+        - title: "Electronics"
+          payload: /Electronics
+        - title: "Clothing"
+          payload: /Clothing
+        - title: "Home and Furniture"
+          payload: /Home and Furniture
+        - title: "Books and Stationery"
+          payload: /Books and Stationery
+        - title: "Beauty and Personal Care"
+          payload: /Beauty and Personal Care
+        - title: "Sports and Outdoors"
+          payload: /Sports and Outdoors
+        - title: "Toys and Games"
+          payload: /Toys and Games
+        - title: "Automotive"
+          payload: /Automotive
+        - title: "Health and Wellness"
+          payload: /Health and Wellness
+        - title: "Jewelry and Watches"
+          payload: /Jewelry and Watches
+        - title: "Grocery and Food"
+          payload: /Grocery and Food
+        - title: "Baby and Kids"
+          payload: /Baby and Kids
+        - title: "Crafts and Hobbies"
+          payload: /Crafts and Hobbies
+        - title: "Music and Instruments"
+          payload: /Music and Instruments
+        - title: "Garden and Outdoor Living"
+          payload: /Garden and Outdoor Living
+        - title: "Handmade"
+          payload: /Handmade
+    - text: "Fantastic! Ready to dive into our selection? Please pick a category, "
+      buttons:
+        - title: "Electronics"
+          payload: /Electronics
+        - title: "Clothing"
+          payload: /Clothing
+        - title: "Home and Furniture"
+          payload: /Home and Furniture
+        - title: "Books and Stationery"
+          payload: /Books and Stationery
+        - title: "Beauty and Personal Care"
+          payload: /Beauty and Personal Care
+        - title: "Sports and Outdoors"
+          payload: /Sports and Outdoors
+        - title: "Toys and Games"
+          payload: /Toys and Games
+        - title: "Automotive"
+          payload: /Automotive
+        - title: "Health and Wellness"
+          payload: /Health and Wellness
+        - title: "Jewelry and Watches"
+          payload: /Jewelry and Watches
+        - title: "Grocery and Food"
+          payload: /Grocery and Food
+        - title: "Baby and Kids"
+          payload: /Baby and Kids
+        - title: "Crafts and Hobbies"
+          payload: /Crafts and Hobbies
+        - title: "Music and Instruments"
+          payload: /Music and Instruments
+        - title: "Garden and Outdoor Living"
+          payload: /Garden and Outdoor Living
+        - title: "Handmade"
+          payload: /Handmade
+    - text: "Excellent choice to shop! Now, which category would you like to explore first? Options include "
+      buttons:
+        - title: "Electronics"
+          payload: /Electronics
+        - title: "Clothing"
+          payload: /Clothing
+        - title: "Home and Furniture"
+          payload: /Home and Furniture
+        - title: "Books and Stationery"
+          payload: /Books and Stationery
+        - title: "Beauty and Personal Care"
+          payload: /Beauty and Personal Care
+        - title: "Sports and Outdoors"
+          payload: /Sports and Outdoors
+        - title: "Toys and Games"
+          payload: /Toys and Games
+        - title: "Automotive"
+          payload: /Automotive
+        - title: "Health and Wellness"
+          payload: /Health and Wellness
+        - title: "Jewelry and Watches"
+          payload: /Jewelry and Watches
+        - title: "Grocery and Food"
+          payload: /Grocery and Food
+        - title: "Baby and Kids"
+          payload: /Baby and Kids
+        - title: "Crafts and Hobbies"
+          payload: /Crafts and Hobbies
+        - title: "Music and Instruments"
+          payload: /Music and Instruments
+        - title: "Garden and Outdoor Living"
+          payload: /Garden and Outdoor Living
+        - title: "Handmade"
+          payload: /Handmade
+    - text: "Exciting! Let's narrow down your search. Are you interested in "
+      buttons:
+        - title: "Electronics"
+          payload: /Electronics
+        - title: "Clothing"
+          payload: /Clothing
+        - title: "Home and Furniture"
+          payload: /Home and Furniture
+        - title: "Books and Stationery"
+          payload: /Books and Stationery
+        - title: "Beauty and Personal Care"
+          payload: /Beauty and Personal Care
+        - title: "Sports and Outdoors"
+          payload: /Sports and Outdoors
+        - title: "Toys and Games"
+          payload: /Toys and Games
+        - title: "Automotive"
+          payload: /Automotive
+        - title: "Health and Wellness"
+          payload: /Health and Wellness
+        - title: "Jewelry and Watches"
+          payload: /Jewelry and Watches
+        - title: "Grocery and Food"
+          payload: /Grocery and Food
+        - title: "Baby and Kids"
+          payload: /Baby and Kids
+        - title: "Crafts and Hobbies"
+          payload: /Crafts and Hobbies
+        - title: "Music and Instruments"
+          payload: /Music and Instruments
+        - title: "Garden and Outdoor Living"
+          payload: /Garden and Outdoor Living
+        - title: "Handmade"
+          payload: /Handmade
+    - text: "Wonderful! Our store has a wide range of categories. What kind of products are you looking for today? Feel free to choose from "
+      buttons:
+        - title: "Electronics"
+          payload: /Electronics
+        - title: "Clothing"
+          payload: /Clothing
+        - title: "Home and Furniture"
+          payload: /Home and Furniture
+        - title: "Books and Stationery"
+          payload: /Books and Stationery
+        - title: "Beauty and Personal Care"
+          payload: /Beauty and Personal Care
+        - title: "Sports and Outdoors"
+          payload: /Sports and Outdoors
+        - title: "Toys and Games"
+          payload: /Toys and Games
+        - title: "Automotive"
+          payload: /Automotive
+        - title: "Health and Wellness"
+          payload: /Health and Wellness
+        - title: "Jewelry and Watches"
+          payload: /Jewelry and Watches
+        - title: "Grocery and Food"
+          payload: /Grocery and Food
+        - title: "Baby and Kids"
+          payload: /Baby and Kids
+        - title: "Crafts and Hobbies"
+          payload: /Crafts and Hobbies
+        - title: "Music and Instruments"
+          payload: /Music and Instruments
+        - title: "Garden and Outdoor Living"
+          payload: /Garden and Outdoor Living
+        - title: "Handmade"
+          payload: /Handmade
+    - text: "Fantastic! We've got something for everyone. What category sparks your interest right now? "
+      buttons:
+        - title: "Electronics"
+          payload: /Electronics
+        - title: "Clothing"
+          payload: /Clothing
+        - title: "Home and Furniture"
+          payload: /Home and Furniture
+        - title: "Books and Stationery"
+          payload: /Books and Stationery
+        - title: "Beauty and Personal Care"
+          payload: /Beauty and Personal Care
+        - title: "Sports and Outdoors"
+          payload: /Sports and Outdoors
+        - title: "Toys and Games"
+          payload: /Toys and Games
+        - title: "Automotive"
+          payload: /Automotive
+        - title: "Health and Wellness"
+          payload: /Health and Wellness
+        - title: "Jewelry and Watches"
+          payload: /Jewelry and Watches
+        - title: "Grocery and Food"
+          payload: /Grocery and Food
+        - title: "Baby and Kids"
+          payload: /Baby and Kids
+        - title: "Crafts and Hobbies"
+          payload: /Crafts and Hobbies
+        - title: "Music and Instruments"
+          payload: /Music and Instruments
+        - title: "Garden and Outdoor Living"
+          payload: /Garden and Outdoor Living
+        - title: "Handmade"
+          payload: /Handmade
+    - text: "Great to have you here! Before we start, could you let me know which category you're interested in exploring today? We have options like "
+      buttons:
+        - title: "Electronics"
+          payload: /Electronics
+        - title: "Clothing"
+          payload: /Clothing
+        - title: "Home and Furniture"
+          payload: /Home and Furniture
+        - title: "Books and Stationery"
+          payload: /Books and Stationery
+        - title: "Beauty and Personal Care"
+          payload: /Beauty and Personal Care
+        - title: "Sports and Outdoors"
+          payload: /Sports and Outdoors
+        - title: "Toys and Games"
+          payload: /Toys and Games
+        - title: "Automotive"
+          payload: /Automotive
+        - title: "Health and Wellness"
+          payload: /Health and Wellness
+        - title: "Jewelry and Watches"
+          payload: /Jewelry and Watches
+        - title: "Grocery and Food"
+          payload: /Grocery and Food
+        - title: "Baby and Kids"
+          payload: /Baby and Kids
+        - title: "Crafts and Hobbies"
+          payload: /Crafts and Hobbies
+        - title: "Music and Instruments"
+          payload: /Music and Instruments
+        - title: "Garden and Outdoor Living"
+          payload: /Garden and Outdoor Living
+        - title: "Handmade"
+          payload: /Handmade
+    - text: "Exciting times! To tailor your shopping experience, please select a category that suits your preferences – "
+      buttons:
+        - title: "Electronics"
+          payload: /Electronics
+        - title: "Clothing"
+          payload: /Clothing
+        - title: "Home and Furniture"
+          payload: /Home and Furniture
+        - title: "Books and Stationery"
+          payload: /Books and Stationery
+        - title: "Beauty and Personal Care"
+          payload: /Beauty and Personal Care
+        - title: "Sports and Outdoors"
+          payload: /Sports and Outdoors
+        - title: "Toys and Games"
+          payload: /Toys and Games
+        - title: "Automotive"
+          payload: /Automotive
+        - title: "Health and Wellness"
+          payload: /Health and Wellness
+        - title: "Jewelry and Watches"
+          payload: /Jewelry and Watches
+        - title: "Grocery and Food"
+          payload: /Grocery and Food
+        - title: "Baby and Kids"
+          payload: /Baby and Kids
+        - title: "Crafts and Hobbies"
+          payload: /Crafts and Hobbies
+        - title: "Music and Instruments"
+          payload: /Music and Instruments
+        - title: "Garden and Outdoor Living"
+          payload: /Garden and Outdoor Living
+        - title: "Handmade"
+          payload: /Handmade
+
+  utter_electronics:
+    - text: "Awesome choice! 🎉 Let's dive into the world of electronics. What specific gadgets or devices are you looking for today?"
+    - text: "Great decision! Electronics it is. Whether you're after the latest gadgets or tech essentials, I'm here to help. What can I assist you with?"
+    - text: "Fantastic! Electronics is a world full of possibilities. What kind of devices or gadgets are you interested in? Smartphones, laptops, or perhaps something else?"
+    - text: "Excellent! Electronics it is. From cutting-edge tech to must-have gadgets, we've got it all. What specific items are you searching for?"
+    - text: "Fantastic taste! The electronics section is buzzing with innovation. What are you in the mood for? Phones, laptops, or maybe some cool accessories?"
+    - text: "Great decision! The electronics category is filled with exciting options. What are you looking for today? Smart devices, audio equipment, or something else?"
+    - text: "Good choice! Electronics is a fascinating world. What type of gadgets or devices are on your radar? Let me know, and I'll guide you through our selection."
+    - text: "Exciting! The electronics aisle is calling. What tech marvels are you interested in today? Feel free to let me know, and we'll find the perfect match."
+    - text: "Perfect! The electronics category is packed with innovation. What specific electronic items are you interested in exploring today?"
+    - text: "Wonderful choice! Electronics it is. Whether you're into the latest gadgets or essential tech, let me know what you're searching for, and I'll make sure you find it."
+
+  utter_electronics_choice:
+#    - text: "[Phones](www.google.com/phones) \n[Laptops](www.google.com/laptops) \n[Cameras](www.google.com/cameras) \n[Audio Devices](www.google.com/audio_devices) \n[Smartwatches](www.google.com/smartwatches) \n[Fitness trackers](www.google.com/fitness_trackers)"
+    - text: ""
+      buttons:
+        - type: "Phone"
+          payload: '/selected_phone'
+
+  utter_electronics_phone:
+    - text: "Great choice! 📱 I've added the selected phone to your cart. To complete your purchase and explore more amazing deals, please click [TRENDIFY](www.google.com) to visit our website. If you have any more questions or need assistance, feel free to ask. Happy shopping!"
+
+
+
+#  Queries by User to ChatBOT
+  utter_query_about_prod:
+    - text: "We offer a wide range of products including electronics, clothing, accessories, home goods, and more. Explore our catalog for the latest offerings."
+
+  utter_query_about_order:
+    - text: "Placing an order is easy! Simply browse our website or use our chatbot to find the products you want, add them to your cart, and follow the checkout process."
+
+  utter_query_about_payment_method:
+    - text: "We accept various payment methods, including credit/debit cards, Stripe, and other secure payment options. You can choose the one that suits you best during the checkout process."
+    - text: "We accept a variety of payment methods, including credit cards, debit cards, and mobile wallets. You can find the full list at our checkout page."
+    - text: "We accept Visa, MasterCard, American Express, and Discover. Your credit card information is securely processed, and you can choose to save it for future purchases."
+
+  utter_qurey_about_track:
+    - text: "Once your order is shipped, you will receive a tracking number via email or SMS. Use this number to track your order on our website or through the carrier's tracking service."
+
+  utter_modify_cancel_order:
+    - text: "Unfortunately, once an order is placed, it cannot be modified or canceled. Please double-check your items and shipping information before confirming your order."
+
+  utter_query_return_policy:
+    - text: 'Our return policy allows you to return items within a specified period after receiving your order. Please visit our "Returns" page for detailed information on how to initiate a return.'
+
+  utter_promotions_discount:
+    - text: "We frequently run promotions and discounts. Check our website or ask the chatbot for current offers. You can also subscribe to our newsletter to receive updates on exclusive deals."
+
+  utter_customer_support:
+    - text: You can reach our customer support team by clicking the "Contact Us" link on our website or by using the chatbot. We're here to assist you with any questions or concerns.
+
+
+actions:
+  - action_open_website
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

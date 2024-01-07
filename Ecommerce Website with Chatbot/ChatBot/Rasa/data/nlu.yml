@@ -1,0 +1,163 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - what is your name?
+    - who are you?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: Choose_Category
+  examples: |
+    - I would like to order 
+    - I want to order 
+    - place an order
+    - Let's order item
+    - order item
+    - I'd like to place an order for...
+    - Can I order
+    - I want to purchase .
+    - I'm interested in buying.
+    - Could you help me with ordering ?
+    - I'd like to buy a item.
+    - I'm ready to make a purchase.
+    - How can I go about ordering ?
+
+- intent: Electronics
+  examples: |
+    - mobile
+    - Phone
+    - Laptops
+    - Cameras
+    - Audio Devices
+    - Wearables
+    - smartwatch
+    - fitness trackers
+#    - [mobile](electronics)
+#    - [Phones](electronics)
+#    - [Laptops](electronics)
+#    - [Cameras](electronics)
+#    - [Audio Devices](electronics)
+#    - [Wearables ](electronics)
+#    - [smartwatches ](electronics)
+#    - [fitness trackers](electronics)
+#
+
+- intent: query_about_prod
+  examples: |
+    - What products do you sell?
+    - products do you sell
+
+- intent: query_about_order
+  examples: |
+    - How can I place an order?
+    - can I place an order
+
+- intent: query_about_payment_method
+  examples: |
+    - What payment methods do you accept?
+    - payment methods available
+    - payment methods
+    - What payment methods do you accept?
+    - Can I pay with a credit card?
+    - Are debit cards accepted for payment?
+    - Which credit cards are accepted?
+    - Is it safe to enter my credit card information on your website?
+    - Can I save my credit card for future purchases?
+    - Do you support mobile wallet payments like Apple Pay or Google Pay?
+    - How can I use my digital wallet to make a purchase?
+    - Is Samsung Pay an accepted payment method?
+    - How do you ensure the security of my payment information?
+    - Is my payment information stored securely?
+    - Do you use encryption for online transactions?
+    - Do you accept PayPal?
+    - Can I pay with cryptocurrency?
+    - Are there any other alternative payment options available?
+    - Do you accept international credit cards?
+    - Can I make a payment from outside the country?
+    - Are there any additional fees for international transactions?
+
+- intent: qurey_about_track
+  examples: |
+    - How can I track my order?
+    - track my order
+
+- intent: modify_cancel_order
+  examples: |
+      - Can I modify or cancel my order after placing it?
+      - Can I Modify my orders
+      - Can I Cancel my order
+      - I want 
+
+- intent: query_return_policy
+  examples: |
+    - What is your return policy?
+    - return policy
+
+- intent: promotions_discount
+  examples: |
+    - Are there any ongoing promotions or discounts?
+    - promotions
+    - discounts
+
+- intent: customer_support
+  examples: |
+    - How do I contact customer support?
+    - customer support
+    
+- intent: selected_phone
+  examples: |
+    - mobile phone 
+    - phone

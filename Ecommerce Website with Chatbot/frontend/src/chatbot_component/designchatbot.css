@@ -1,0 +1,147 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  /* width: 500px; */
+}
+
+.justify-content-center{
+  /* display: flex; */
+  width: 60%;
+  /* background-color: aqua; */
+
+}
+
+.cardHeader h1{
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.circleBtn {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  margin: 5px;
+  border: none;
+  background-color: rgb(11, 252, 31);
+
+}
+
+.input-form{
+  /* background-color: green; */
+  width: 100%;
+}
+
+.col-10{
+  /* background-color: yellow; */
+  width: 100%;
+  >input{
+    border-radius: 10px 0px 15px 25px;
+    width:100%;
+  }
+}
+
+.msginp {
+  width: 100%;
+  height: 55px;
+  border-radius: 50px 50px 50px 50px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: none;
+  padding-left: 10px;
+
+}
+
+.cola {
+  height: 65px;
+  width: 65px;
+  padding-left: 0px;
+}
+
+.msgalignend {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.msgalignstart {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 5px;
+
+}
+
+.botmsg {
+  background-color: rgb(205, 173, 241);
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  min-height: 45px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  border-radius: 25px;
+  max-width: 20rem;
+}
+
+.usermsg {
+  background-color: rgb(235, 220, 252);
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  min-height: 45px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  border-radius: 25px;
+  max-width: 20rem;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(67, 28, 196);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3509e6;
+}
+
+.botIcon {
+  font-size: 45px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.userIcon {
+  font-size: 40px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+
+}
+
+.sendBtn {
+  font-size: 25px;
+}
